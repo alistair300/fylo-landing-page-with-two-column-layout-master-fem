@@ -1,0 +1,120 @@
+.main {
+  background-color: $lightGrayishBlue;
+  position: relative;
+  padding: 4rem 0 4.6875rem;
+
+  .container {
+    @media (min-width: 1024px) {
+      gap: 70px;
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url('/images/bg-curve-mobile.svg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    bottom: 100%;
+
+    @media (min-width: 1024px) {
+      background-image: url('/images/bg-curve-desktop.svg');
+    }
+  }
+
+  &__content {
+    margin-top: 2.5rem;
+    padding: 2.5rem 0 2rem;
+
+    @media (min-width: 1024px) {
+      padding-bottom: 5rem;
+    }
+  }
+
+  .illustration {
+    @media (min-width: 1204px) {
+      width: 575px;
+    }
+  }
+
+  p {
+    text-align: left;
+    color: #000;
+    font-size: 0.9375rem;
+    max-width: 525px;
+  }
+
+  .text {
+    margin: 1.25rem 0 2.1875rem;
+  }
+
+  a {
+    color: $moderateCyan;
+    border-bottom: 2px solid $moderateCyan;
+    padding: 0.375rem 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 2.1875rem;
+    font-size: 0.875rem;
+
+    img {
+      width: 16px;
+    }
+  }
+
+  &__testimonial {
+    color: $veryDarkBlue;
+    background-color: #fff;
+    padding: 1.25rem 1.5625rem;
+    box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.1);
+    width: 280px;
+    margin: 0 auto;
+
+    @media (min-width: 1024px) {
+      margin: 0;
+      width: 350px;
+    }
+  }
+
+  .quotes {
+    width: 15px;
+
+    img {
+      height: 15px;
+    }
+  }
+
+  blockquote {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    margin: 0.75rem 0 0.9375rem;
+  }
+
+  .author {
+    gap: 10px;
+
+    .flex {
+      gap: 3px;
+    }
+
+    &-image {
+      width: 25px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    h6 {
+      font-size: 0.625rem;
+    }
+
+    small {
+      font-size: 0.4375rem;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.footer {
+  background-color: $veryDarkBlue;
+  padding: 3.75rem 0 2.5rem;
+
+  @media (min-width: 1024px) {
+    padding: 5.3125rem 0 5rem;
+  }
+
+  .container {
+    display: grid;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      width: 90%;
+    }
+  }
+
+  a {
+    padding: 0.3125rem 0;
+
+    &:hover {
+      color: $brightBlue;
+    }
+  }
+
+  & > *,
+  a {
+    color: #fff;
+  }
+
+  &__logo {
+    width: 180px;
+    margin-bottom: 2rem;
+
+    @media (min-width: 1024px) {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 3.125rem;
+    li {
+      font-size: 1rem;
+    }
+
+    li:nth-child(1) {
+      margin-bottom: 1rem;
+    }
+
+    span {
+      margin-right: 0.75rem;
+      width: 20px;
+      display: inline-block;
+    }
+  }
+
+  &__links {
+    margin-bottom: 2.5rem;
+
+    @media (min-width: 1024px) {
+      justify-self: center;
+    }
+
+    li {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__icons {
+    align-self: center;
+    justify-self: center;
+
+    @media (min-width: 1024px) {
+      align-self: start;
+    }
+
+    li {
+      margin-right: 0.625rem;
+
+      @media (min-width: 1024px) {
+        margin-right: 1rem;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+
+        &:hover {
+          border-color: $brightBlue;
+        }
+      }
+
+      &:nth-child(1) {
+        a {
+          padding: 8px 11px;
+        }
+      }
+    }
+  }
+}

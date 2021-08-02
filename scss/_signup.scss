@@ -1,0 +1,53 @@
+.signup {
+  background-color: $desaturatedBlue;
+  color: #fff;
+  padding: 3.4375rem 0 4rem;
+
+  @media (min-width: 1024px) {
+    padding: 6.25rem 0 5.3125rem;
+  }
+
+  .container {
+    @media (min-width: 1024px) {
+      gap: 255px;
+    }
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  p {
+    color: $lightGrayishBlue;
+    font-size: 0.9375rem;
+
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  .btn {
+    font-size: 0.6875rem;
+    margin-top: 1rem;
+
+    @media (min-width: 1024px) {
+      max-width: 200px;
+    }
+  }
+
+  form.error input {
+    border-color: maroon;
+  }
+
+  form.error small {
+    display: block;
+    color: grey;
+  }
+}
